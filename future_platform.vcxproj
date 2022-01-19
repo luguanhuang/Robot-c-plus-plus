@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <RootNamespace>future_platform</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.19041.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>bin\Debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>future_platform</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>bin\Debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>future_platform</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">future_platform</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">future_platform</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\code\future_platform-master\esunny9.0;.;../esunny9.0;F:\QT\QT5.12.3\5.12.3\MSVC2017\include;F:\QT\QT5.12.3\5.12.3\MSVC2017\include\QtGui;F:\QT\QT5.12.3\5.12.3\MSVC2017\include\QtANGLE;F:\QT\QT5.12.3\5.12.3\MSVC2017\include\QtCore;E:/code/future_platform-master/GeneratedFiles/$(ConfigurationName);C:\VulkanSDK\1.0.51.0\include;F:\QT\QT5.12.3\5.12.3\MSVC2017\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings);4430</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN32_LEAN_AND_MEAN;WIN64;QT_DLL;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Multimediad.lib;iTapTradeAPI.lib;TapQuoteAPI.lib;qtmaind.lib;Qt5Gui.lib;Qt5Guid.lib;Qt5Core.lib;Qt5Cored.lib;Qt5OpenGL.lib;Qt5OpenGLd.lib;Qt5Widgets.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)esunny9.0\lib;%(AdditionalLibraryDirectories);F:\Qt\Qt5.12.3\5.12.3\msvc2017\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\future_platform.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN32_LEAN_AND_MEAN;WIN64;QT_DLL;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\code\future_platform-master\esunny9.0;.;../esunny9.0;F:\QT\QT5.12.3\5.12.3\MSVC2017\include;F:\QT\QT5.12.3\5.12.3\MSVC2017\include\QtGui;F:\QT\QT5.12.3\5.12.3\MSVC2017\include\QtANGLE;F:\QT\QT5.12.3\5.12.3\MSVC2017\include\QtCore;E:/code/future_platform-master/GeneratedFiles/$(ConfigurationName);C:\VulkanSDK\1.0.51.0\include;F:\QT\QT5.12.3\5.12.3\MSVC2017\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN32_LEAN_AND_MEAN;WIN64;QT_DLL;QT_WIDGETS_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Multimediad.lib;iTapTradeAPI.lib;TapQuoteAPI.lib;qtmaind.lib;Qt5Gui.lib;Qt5Guid.lib;Qt5Core.lib;Qt5Cored.lib;Qt5OpenGL.lib;Qt5OpenGLd.lib;Qt5Widgets.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)esunny9.0\lib;%(AdditionalLibraryDirectories);F:\Qt\Qt5.12.3\5.12.3\msvc2017\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\future_platform.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN32_LEAN_AND_MEAN;WIN64;QT_DLL;QT_WIDGETS_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cdatetime_lib.cpp" />
+    <ClCompile Include="src\cdatetime_lib.cpp" />
+    <ClCompile Include="src\log_lib_cplus.cpp" />
+    <ClCompile Include="src\Quote.cpp" />
+    <ClCompile Include="src\SimpleEvent.cpp" />
+    <ClCompile Include="src\Trade.cpp" />
+    <ClCompile Include="src\applog.cpp" />
+    <ClCompile Include="src\future_platform.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\md_server.cpp" />
+    <ClCompile Include="src\set_dialog.cpp" />
+    <ClCompile Include="src\trader_server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\Quote.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">src\Quote.h;GeneratedFiles\$(ConfigurationName)\moc_predefs.h;F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN32_LEAN_AND_MEAN -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "E:/code/future_platform-master/GeneratedFiles/$(ConfigurationName)/moc_predefs.h" -IF:/QT/QT5.12.3/5.12.3/MSVC2017/mkspecs/win32-msvc -IE:/code/future_platform-master -IE:/code/esunny9.0 -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtGui -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtANGLE -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt" src\Quote.h -o GeneratedFiles\moc_Quote.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC src/Quote.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\$(ConfigurationName)\moc_Quote.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">src\Quote.h;GeneratedFiles\$(ConfigurationName)\moc_predefs.h;F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN32_LEAN_AND_MEAN -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "E:/code/future_platform-master/GeneratedFiles/$(ConfigurationName)/moc_predefs.h" -IF:/QT/QT5.12.3/5.12.3/MSVC2017/mkspecs/win32-msvc -IE:/code/future_platform-master -IE:/code/esunny9.0 -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtGui -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtANGLE -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt" src\Quote.h -o GeneratedFiles\moc_Quote.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC src/Quote.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\$(ConfigurationName)\moc_Quote.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="cdatetime_lib.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\cdatetime_lib.h" />
+    <ClInclude Include="src\log_lib_cplus.h" />
+    <ClInclude Include="src\QuoteConfig.h" />
+    <ClInclude Include="src\SimpleEvent.h" />
+    <ClInclude Include="esunny9.0\TapAPICommDef.h" />
+    <ClInclude Include="esunny9.0\TapAPIError.h" />
+    <ClInclude Include="esunny9.0\TapQuoteAPI.h" />
+    <ClInclude Include="esunny9.0\TapQuoteAPIDataType.h" />
+    <ClInclude Include="src\Trade.h" />
+    <ClInclude Include="src\TradeConfig.h" />
+    <ClInclude Include="src\applog.h" />
+    <ClInclude Include="src\common.h" />
+    <CustomBuild Include="src\future_platform.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">src\future_platform.h;GeneratedFiles\$(ConfigurationName)\moc_predefs.h;F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN32_LEAN_AND_MEAN -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "E:/code/future_platform-master/GeneratedFiles/$(ConfigurationName)/moc_predefs.h" -IF:/QT/QT5.12.3/5.12.3/MSVC2017/mkspecs/win32-msvc -IE:/code/future_platform-master -IE:/code/esunny9.0 -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtGui -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtANGLE -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt" src\future_platform.h -o GeneratedFiles\moc_future_platform.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC src/future_platform.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\$(ConfigurationName)\moc_future_platform.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">src\future_platform.h;GeneratedFiles\$(ConfigurationName)\moc_predefs.h;F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN32_LEAN_AND_MEAN -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "E:/code/future_platform-master/GeneratedFiles/$(ConfigurationName)/moc_predefs.h" -IF:/QT/QT5.12.3/5.12.3/MSVC2017/mkspecs/win32-msvc -IE:/code/future_platform-master -IE:/code/esunny9.0 -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtGui -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtANGLE -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt" src\future_platform.h -o GeneratedFiles\moc_future_platform.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC src/future_platform.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\$(ConfigurationName)\moc_future_platform.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="esunny9.0\iTapAPICommDef.h" />
+    <ClInclude Include="esunny9.0\iTapAPIError.h" />
+    <ClInclude Include="esunny9.0\iTapTradeAPI.h" />
+    <ClInclude Include="esunny9.0\iTapTradeAPIDataType.h" />
+    <ClInclude Include="src\md_server.h" />
+    <ClInclude Include="src\nocopyable.h" />
+    <CustomBuild Include="src\set_dialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">src\set_dialog.h;GeneratedFiles\$(ConfigurationName)\moc_predefs.h;F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN32_LEAN_AND_MEAN -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "E:/code/future_platform-master/GeneratedFiles/$(ConfigurationName)/moc_predefs.h" -IF:/QT/QT5.12.3/5.12.3/MSVC2017/mkspecs/win32-msvc -IE:/code/future_platform-master -IE:/code/esunny9.0 -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtGui -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtANGLE -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt" src\set_dialog.h -o GeneratedFiles\moc_set_dialog.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC src/set_dialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\$(ConfigurationName)\moc_set_dialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">src\set_dialog.h;GeneratedFiles\$(ConfigurationName)\moc_predefs.h;F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN32_LEAN_AND_MEAN -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "E:/code/future_platform-master/GeneratedFiles/$(ConfigurationName)/moc_predefs.h" -IF:/QT/QT5.12.3/5.12.3/MSVC2017/mkspecs/win32-msvc -IE:/code/future_platform-master -IE:/code/esunny9.0 -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtGui -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtANGLE -IF:/QT/QT5.12.3/5.12.3/MSVC2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt" src\set_dialog.h -o GeneratedFiles\moc_set_dialog.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC src/set_dialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\$(ConfigurationName)\moc_set_dialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="src\singleton.h" />
+    <ClInclude Include="src\trader_server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\moc_Quote.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_Trade.cpp" />
+    <ClCompile Include="GeneratedFiles\moc_future_platform.cpp" />
+    <CustomBuild Include="GeneratedFiles\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E F:\QT\QT5.12.3\5.12.3\MSVC2017\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;GeneratedFiles\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\$(ConfigurationName)\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E F:\QT\QT5.12.3\5.12.3\MSVC2017\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;GeneratedFiles\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\$(ConfigurationName)\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="GeneratedFiles\moc_set_dialog.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_future_platform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="future_platform.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res.qrc" />
+    <None Include="Resources\close.ico" />
+    <CustomBuild Include="future_platform.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">future_platform.qrc;F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\rcc.exe;Resources\close.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\rcc.exe -name future_platform future_platform.qrc -o GeneratedFiles\qrc_future_platform.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC future_platform.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\qrc_future_platform.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">future_platform.qrc;F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\rcc.exe;Resources\close.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\QT\QT5.12.3\5.12.3\MSVC2017\bin\rcc.exe -name future_platform future_platform.qrc -o GeneratedFiles\qrc_future_platform.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC future_platform.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\qrc_future_platform.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="future_platform.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\e1.ico" />
+    <Image Include="Resources\e10.ico" />
+    <Image Include="Resources\e11.ico" />
+    <Image Include="Resources\e2.ico" />
+    <Image Include="Resources\e3.ico" />
+    <Image Include="Resources\e4.ico" />
+    <Image Include="Resources\e5.ico" />
+    <Image Include="Resources\e6.ico" />
+    <Image Include="Resources\e7.ico" />
+    <Image Include="Resources\e8.ico" />
+    <Image Include="Resources\e9.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

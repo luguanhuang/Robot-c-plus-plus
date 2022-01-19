@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/e1.ico</file>
+        <file>res/e2.ico</file>
+        <file>res/e3.ico</file>
+        <file>res/e4.ico</file>
+        <file>res/e5.ico</file>
+        <file>res/e6.ico</file>
+        <file>res/e7.ico</file>
+    </qresource>
+</RCC>
